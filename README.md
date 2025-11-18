@@ -49,3 +49,6 @@ Solo ve sus propios registros gracias a las políticas RLS de Supabase.
 Puede ver todos los registros de todos los medidores.
 
 Accede a fotos, coordenadas y enlaces de Google Maps.
+
+<img width="952" height="545" alt="image" src="https://github.com/user-attachments/assets/86847e3b-4698-4d97-bfe2-b0d3591c1edc" />
+
