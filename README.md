@@ -41,6 +41,9 @@ Puede registrar nuevas lecturas con fotos y ubicación.
 
 Solo ve sus propios registros gracias a las políticas RLS de Supabase.
 
+<img width="926" height="917" alt="image" src="https://github.com/user-attachments/assets/df8ba8eb-2c20-42a3-8b52-0356a94093c3" />
+
+
 ## Administrador
 
 Puede ver todos los registros de todos los medidores.
