@@ -1,0 +1,197 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import '@ionic/angular/css/palettes/dark.system.css';
+
+/* Nuevo estilo global: estilo moderno, tarjetas suaves y elementos redondeados */
+
+html, body, ion-app, ion-content {
+	height: 100%;
+	font-family: var(--ion-font-family);
+	color: var(--ion-text-color);
+	background: var(--app-bg-gradient);
+}
+
+/* Toolbar / header: glass effect */
+ion-header, ion-toolbar {
+	--background: rgba(255,255,255,0.6);
+	backdrop-filter: blur(6px);
+	box-shadow: var(--app-elevation-1);
+	border-bottom: 1px solid rgba(15,23,42,0.04);
+}
+
+/* Uniform card style */
+ion-card {
+	background: var(--ion-card-background);
+	border-radius: var(--app-radius);
+	box-shadow: var(--app-elevation-1);
+	overflow: hidden;
+	transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms;
+}
+
+ion-card:hover {
+	transform: translateY(-6px);
+	box-shadow: var(--app-elevation-2);
+}
+
+/* Página y componentes específicos */
+.hero {
+	text-align: center;
+	margin: 12px 0 18px 0;
+}
+.hero-title {
+	margin: 0;
+	font-size: 1.25rem;
+	color: var(--ion-color-dark);
+}
+.hero-sub {
+	margin: 4px 0 0 0;
+	color: var(--ion-color-medium);
+}
+
+.auth-container {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	align-items: stretch;
+}
+.auth-card {
+	max-width: 520px;
+	margin: 6px auto;
+}
+.primary-btn { --background: linear-gradient(90deg,var(--ion-color-primary),var(--ion-color-primary-tint)); color: #fff; }
+.secondary-btn { --background: linear-gradient(90deg,var(--ion-color-secondary), #3fc9a1); color: #063047; }
+.tertiary-btn { --background: linear-gradient(90deg,var(--ion-color-tertiary), #ffd88a); color: #063047; }
+
+.switch-auth {
+	text-align: center;
+	margin-top: 12px;
+	color: var(--ion-color-medium);
+}
+.switch-auth a { color: var(--ion-color-primary); cursor: pointer; font-weight:600 }
+
+.record-card { margin: 12px 0; }
+.mini-img, .mini { width: 86px; height: 68px; object-fit: cover; border-radius: 8px; margin-right: 8px; box-shadow: 0 6px 18px rgba(15,23,42,0.06); }
+.image-row { display:flex; gap:8px; padding: 12px; }
+.empty { text-align:center; padding: 28px 12px; color: var(--ion-color-medium); }
+
+.welcome-card { background: linear-gradient(180deg, #fff, #fbfdff); border-radius: var(--app-radius); margin-bottom:12px; }
+.form-card { margin-bottom: 12px; }
+
+.modal-content { display:flex; align-items:center; justify-content:center; }
+.full-img { max-width: 100%; height: auto; border-radius: 8px; }
+
+.search-item { background: rgba(255,255,255,0.9); border-radius: 10px; margin-bottom: 10px; box-shadow: 0 6px 18px rgba(15,23,42,0.04); }
+
+/* Make links consistent */
+a { color: var(--ion-color-primary); }
+
+/* Card header and content spacing */
+ion-card-header, ion-card-content {
+	padding: 18px;
+}
+
+/* Buttons: pill shape, gradient */
+ion-button {
+	border-radius: var(--app-btn-border-radius);
+	padding: var(--app-btn-padding);
+	--background: linear-gradient(90deg, var(--ion-color-primary), var(--ion-color-primary-tint));
+	--color: var(--ion-color-primary-contrast);
+	box-shadow: 0 6px 18px rgba(91,141,239,0.16);
+	font-weight: 600;
+}
+
+ion-button.ghost {
+	background: transparent;
+	--background: transparent;
+	border: 1px solid rgba(15,23,42,0.06);
+	color: var(--ion-color-dark);
+}
+
+/* Inputs & items: soft surfaces */
+ion-item, ion-input, ion-textarea, ion-select {
+	--background: rgba(255,255,255,0.9);
+	border-radius: var(--app-radius-sm);
+	margin: 6px 0;
+	--padding-start: 12px;
+	--padding-end: 12px;
+	box-shadow: 0 4px 12px rgba(15,23,42,0.03);
+}
+
+/* Lists and sections */
+.section-title {
+	font-size: 0.85rem;
+	color: var(--ion-color-medium);
+	margin: 14px 6px 6px 6px;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+/* Floating action button: consistent shadow and color */
+ion-fab-button, .fab-button {
+	--background: linear-gradient(90deg,var(--ion-color-primary),var(--ion-color-secondary));
+	color: #fff;
+	box-shadow: 0 10px 30px rgba(91,141,239,0.16);
+}
+
+/* Footer */
+ion-footer {
+	--background: rgba(255,255,255,0.6);
+	backdrop-filter: blur(6px);
+	border-top: 1px solid rgba(15,23,42,0.04);
+}
+
+/* Page containers to center content on wide screens */
+.page-centered {
+	max-width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 18px;
+}
+
+/* Utilities */
+.muted { color: var(--ion-color-medium); }
+.accent { color: var(--ion-color-primary); }
+
+/* Make icons slightly larger and consistent */
+ion-icon {
+	font-size: 1.25rem;
+}
+
+/* Ensure inputs and buttons have smooth transitions */
+ion-input, ion-textarea, ion-select, ion-button, ion-card {
+	transition: all 180ms ease;
+}

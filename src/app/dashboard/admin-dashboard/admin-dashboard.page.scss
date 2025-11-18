@@ -1,0 +1,25 @@
+/* Admin dashboard: superficie clara, acentos azules */
+
+ion-content { --background: var(--app-bg-gradient); color: var(--ion-text-color); }
+
+.dashboard-hero { margin-bottom: 10px; text-align:left }
+.dashboard-hero .hero-title { font-size:1.15rem; margin:0 }
+
+.search-item { margin-bottom: 12px }
+
+.record-card {
+  margin: 12px 0;
+  border-radius: var(--app-radius);
+  --background: var(--ion-card-background);
+  box-shadow: var(--app-elevation-1);
+}
+
+.title-left { display:flex; flex-direction:column }
+.title-left .small { font-size:0.82rem; color: var(--ion-color-primary); font-weight:600 }
+.title-left .big { font-size:1rem; font-weight:700; color:var(--ion-color-dark) }
+.title-right .date { font-size:0.85rem; color:var(--ion-color-medium) }
+
+.images { display:flex; gap:10px; padding:10px }
+.mini-img { width:86px; height:68px; object-fit:cover; border-radius:8px; box-shadow:0 6px 18px rgba(15,23,42,0.06) }
+
+.empty { text-align:center; color: var(--ion-color-medium); padding:18px }

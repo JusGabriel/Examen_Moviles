@@ -1,0 +1,32 @@
+/* Medidor dashboard: superficies claras, acentos azulados y layout espacioso */
+
+ion-content { --background: var(--app-bg-gradient); color: var(--ion-text-color); padding-bottom: 40px }
+
+.dashboard-hero { margin-bottom: 12px }
+
+ion-card { border-radius: var(--app-radius); margin: 12px 0; --background: var(--ion-card-background); box-shadow: var(--app-elevation-1) }
+
+ion-card-header { padding-top: 8px; padding-bottom: 4px }
+ion-card-title { font-size:1.05rem; font-weight:700; text-align:left; color:var(--ion-color-dark) }
+
+ion-item { --background: rgba(255,255,255,0.98); margin-bottom: 12px; border-radius: 10px }
+ion-label { color: var(--ion-color-medium) }
+ion-input { color: var(--ion-color-dark) }
+
+ion-button { --border-radius: 10px; font-weight:600; height:44px; margin-top:10px }
+.tertiary-btn { --background: linear-gradient(90deg,var(--ion-color-tertiary), #ffe29a); color: #063047 }
+.secondary-btn { --background: linear-gradient(90deg,var(--ion-color-secondary), #3fc9a1); color: #063047 }
+
+.section-title { font-size:0.95rem; margin-top:12px; color:var(--ion-color-medium); font-weight:600 }
+
+.image-row { display:flex; gap:12px; padding:12px }
+.mini-img { width:115px; height:115px; object-fit:cover; border-radius:10px; cursor:pointer; box-shadow:0 6px 18px rgba(15,23,42,0.06) }
+.mini-img:hover { transform: translateY(-4px); box-shadow: var(--app-elevation-2) }
+
+ion-card-content p { margin:6px 0; font-size:0.95rem }
+ion-card-content a { color: var(--ion-color-primary); font-weight:600 }
+
+.modal-content { display:flex; justify-content:center; align-items:center }
+.full-img { width:100%; max-height:90vh; object-fit:contain; border-radius:8px }
+
+.welcome-card { border-radius: var(--app-radius); margin-bottom:12px; padding:10px; background: linear-gradient(180deg,#fff,#fbfdff); box-shadow:var(--app-elevation-1); color:var(--ion-color-dark); font-weight:600 }

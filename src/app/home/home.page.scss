@@ -1,0 +1,33 @@
+/* Página Home: estilos coherentes con tema blanco/azul */
+.page-centered { padding-top: 8px; }
+
+.hero { margin-bottom: 8px; }
+.hero-title { font-size: 1.4rem; font-weight:700; }
+
+.auth-container {
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  align-items:stretch;
+  padding: 6px 12px 28px;
+}
+
+.auth-card {
+  max-width:540px;
+  margin: 6px auto;
+  border-radius: var(--app-radius);
+  --background: var(--ion-card-background);
+}
+
+ion-card-header ion-card-title { color: var(--ion-color-dark); font-weight:700; font-size:1.25rem }
+
+ion-item { --background: rgba(255,255,255,0.98); border-radius: 10px; margin:8px 0 }
+
+ion-button { height:48px; font-weight:700 }
+
+.switch-auth { text-align:center; color: var(--ion-color-medium); margin-top:10px }
+.switch-auth a{ color: var(--ion-color-primary); font-weight:600 }
+
+@media (max-width:480px) {
+  .auth-card { max-width: 92%; }
+}

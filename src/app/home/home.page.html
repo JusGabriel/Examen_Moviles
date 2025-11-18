@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Fluvix</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding page-centered">
+
+  <div class="hero">
+    <h2 class="hero-title">Control y registro de mediciones</h2>
+    <p class="hero-sub">Rápido, confiable y con un diseño renovado.</p>
+  </div>
+
+  <div class="auth-container">
+
+    <!-- LOGIN -->
+    <ion-card *ngIf="showLogin" class="auth-card">
+      <ion-card-header>
+        <ion-card-title>Iniciar sesión</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Correo electrónico</ion-label>
+          <ion-input [(ngModel)]="email" type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input [(ngModel)]="password" type="password"></ion-input>
+        </ion-item>
+        <ion-button expand="full" class="primary-btn" (click)="login()">Ingresar</ion-button>
+        <p class="switch-auth">
+          ¿No tienes cuenta? 
+          <a (click)="toggleForm()">Regístrate aquí</a>
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- REGISTRO -->
+    <ion-card *ngIf="!showLogin" class="auth-card">
+      <ion-card-header>
+        <ion-card-title>Registrar cuenta</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Nombre completo</ion-label>
+          <ion-input [(ngModel)]="name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Correo electrónico</ion-label>
+          <ion-input [(ngModel)]="email" type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input [(ngModel)]="password" type="password"></ion-input>
+        </ion-item>
+        <ion-button expand="full" class="secondary-btn" (click)="register()">Registrarse</ion-button>
+        <p class="switch-auth">
+          ¿Ya tienes cuenta? 
+          <a (click)="toggleForm()">Inicia sesión</a>
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+
+</ion-content>
