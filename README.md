@@ -3,7 +3,7 @@
 Esta aplicación móvil fue creada para digitalizar la toma de lecturas de medidores de agua en el Distrito Metropolitano de Quito. La idea es que los encargados de registrar las lecturas puedan hacerlo directamente desde su teléfono, de forma rápida, confiable y con evidencia visual, sin depender de formularios en papel. Para esto usamos Ionic + Angular en el frontend y Supabase en el backend.
 
 # Qué hace la app
-##Captura de evidencia
+## Captura de evidencia
 
 Permite tomar fotos del medidor y de la fachada de la vivienda.
 
